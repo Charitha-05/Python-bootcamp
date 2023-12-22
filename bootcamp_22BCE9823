@@ -1,0 +1,68 @@
+#Personalized Chatbot that gives information about Indian film industry
+print("Hi!! What's up")
+a = input("May I know your name?")
+print("hello " + a)
+while True:
+    b = input("How can I assist you today? Type 'thank you' to exit.\n")
+    if 'film' in b:
+        print("India has several film industries")
+        c = input("which industry do you want to know about? ")
+        if 'telugu' in c:
+            print("Telugu film industry is known as Tollywood")
+            d = input("do you want to know the state in which its base is located? ")
+            if 'yes' in d:
+                print("It is based in the Telugu-speaking states of Andhra Pradesh and Telangana")
+        elif 'hindi' in c:
+            print("Hindi film industry is known as Bollywood")
+            d = input("do you want to know the state in which its base is located? ")
+            if 'yes' in d:
+                print("It is based in Mumbai (formerly Bombay)")
+        elif 'tamil' in c:
+            print("Tamil film industry is known as Kollywood")
+            d = input("do you want to know the state in which its base is located? ")
+            if 'yes' in d:
+                print("It is based in the Tamil Nadu state")
+        elif 'kannada' in c:
+            print("Kannada film industry is known as Sandalwood")
+            d = input("do you want to know the state in which its base is located?")
+            if 'yes' in d:
+                print("It is based in the Karnataka state")
+        elif 'malayalam' in c:
+            print("Malayalam film industry is known as Mollywood")
+            d = input("do you want to know the state in which its base is located?")
+            if 'yes' in d:
+                print("It is based in the Kerala state")
+        elif 'punjabi' in c:
+            print("Punjabi film industry is known as Pollywood")
+            d = input("do you want to know the state in which its base is located?")
+            if 'yes' in d:
+                print("It is based in Punjab region")
+        elif 'gujarati' in c:
+            print("Gujarati film industry is known as Gollywood")
+            d = input("do you want to know the state in which its base is located?")
+            if 'yes' in d:
+                print("It is based in Gujarat region")
+        elif 'chhattisgarhi' in c:
+            print("Chhattisgarhi film industry is known as Chhollywood.")
+            d = input("do you want to know the state in which its base is located?")
+            if 'yes' in d:
+                print("It is based in the Chhattisgarh state.")
+        elif 'marathi' in c:
+            print("The Marathi film industry produces films in the Marathi language, primarily based in Maharashtra.")
+        elif 'bhojpuri' in c:
+            print("Bhojpuri cinema produces films in the Bhojpuri language, It is primarily based in the Bhojpuri-speaking regions of Bihar and Uttar Pradesh.")
+        elif 'assamese' in c:
+            print("The Assamese film industry produces films in the Assamese language, based in the Assam region.")
+        elif 'odia' in c:
+            print("Odia cinema produces films in the Odia language, It is based in the Odisha state.")
+        elif 'manipuri' in c:
+            print("Manipuri cinema produces films in the Manipuri language, It is based in the Manipur region.")
+        elif 'konkani' in c:
+            print("Konkani cinema produces films in the Konkani language, Primarily based in the Konkan region.")
+        else:
+            print("Sorry! I could not help you with that")
+    elif 'thank you' in b:
+        print("That's ok! See you again")
+        break #exit the loop when user says 'thank you'
+    else:
+        print("Not sure how to assist you. Please ask about films or type 'thank you' to exit.")
